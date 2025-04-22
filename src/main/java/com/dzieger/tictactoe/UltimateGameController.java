@@ -140,15 +140,15 @@ public class UltimateGameController {
 			}
 		}
 		
-		if (winners[0][0].equals(player) &&
-				winners[1][1].equals(player) &&
-				winners[2][2].equals(player)) {
+		if ((winners[0][0] != null && winners[0][0].equals(player)) &&
+				(winners[1][1] != null && winners[1][1].equals(player)) &&
+				(winners[2][2] != null && winners[2][2].equals(player))) {
 			return true;
 		}
 		
-		if (winners[2][0].equals(player) &&
-				winners[1][1].equals(player) &&
-				winners[0][2].equals(player)) {
+		if ((winners[2][0] != null && winners[2][0].equals(player)) &&
+				(winners[1][1] != null && winners[1][1].equals(player)) &&
+				(winners[0][2] != null && winners[0][2].equals(player))) {
 			return true;
 		}
 		
